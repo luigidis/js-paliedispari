@@ -12,12 +12,16 @@ function isPalindroma(parola) {
     console.log(lettereInvertite);
     // console.log(typeof lettereInvertite);
     // Confronto ogni lettera dell'array
+    
     for (let i = 0; i < lettereParola.length; i++) {
+        console.log(lettereParola[i], lettereInvertite[i])
         if (lettereParola[i] !== lettereInvertite[i]) {
             return false
+        } else {
+            return true
         }
     }
-    return true
+    
 }
     
 
