@@ -8,13 +8,15 @@ function isPalindroma(parola) {
     for (let i = 0; i < lettereParola.length; i++) {
         console.log(lettereParola[i], lettereParola[lettereParola.length - 1])
         if (lettereParola[i] !== lettereParola[lettereParola.length - 1]) {
-            return false
+            return false;
         } else {
-            return true
+            return true;
         }
     }
 }
-console.log(isPalindroma(parolaPalindroma))
+console.log(isPalindroma(parolaPalindroma));
+
+
     
    
     
