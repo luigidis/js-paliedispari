@@ -1,7 +1,17 @@
 // console.log('yo')
+
+let pariDispari, numeroDigitato
 // Faccio digitare il numero all'utente
-const pariDispari = prompt('Pari o Dispari').toLocaleLowerCase()
-const numeroDigitato = parseInt(prompt('Digita un numero compreso tra 1 e 5'));
+do {
+    pariDispari = prompt('Pari o Dispari').toLowerCase().trim();
+    console.log(pariDispari)
+} while (pariDispari !== 'pari' && pariDispari !== 'dispari')
+
+do {
+    numeroDigitato = parseInt(prompt('Digita un numero compreso tra 1 e 5'));
+} while (numeroDigitato > 5 || numeroDigitato < 1 || isNaN(numeroDigitato))
+// const numeroDigitato = parseInt(prompt('Digita un numero compreso tra 1 e 5'));
+
 console.log(numeroDigitato, pariDispari)
 
 // Constrollo per vedere se il mio utente ha digitato un numero compreso tra 1 e 5
@@ -33,11 +43,8 @@ console.log(numberPc)
 // Sommo i due numeri ottenuti
 num = numeroDigitato + numberPc
 
-function isEven(num) {
-    if (num % 2 === 0) {
-        return true
-    } 
-    return false
+function isEven(numero) {
+   return numero % 2 === 0
 }
 
 console.log(isEven(num))
