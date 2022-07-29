@@ -1,19 +1,19 @@
 // console.log('yo')
 // Faccio digitare il numero all'utente
-const pariDispari = prompt('Pari o Dispari')
+const pariDispari = prompt('Pari o Dispari').toLocaleLowerCase()
 const numeroDigitato = parseInt(prompt('Digita un numero compreso tra 1 e 5'));
 console.log(numeroDigitato, pariDispari)
 
 // Constrollo per vedere se il mio utente ha digitato un numero compreso tra 1 e 5
 // Creo un array che ha
- const arraycheck = [1, 2, 3, 4, 5]
- console.log(arraycheck)
- for ( let i = 0; i < arraycheck.length; i++) {
-     if (numeroDigitato !== arraycheck[i]) {
-        alert ('Digita un numero Valido')
-        break
-        } 
-}
+//  const arraycheck = [1, 2, 3, 4, 5]
+//  console.log(arraycheck)
+//  for ( let i = 0; i < arraycheck.length; i++) {
+//      if (numeroDigitato !== arraycheck[i]) {
+//         alert ('Digita un numero Valido')
+//         break
+//         } 
+// }
 
 
 // Costanti che ho stabilito precedentemente per il mio minimo e il mio massimo
@@ -44,7 +44,7 @@ console.log(isEven(num))
 // metto il risultato true o false dentro una funzione
 const risultato = isEven(num);
 
-if (((risultato === true) && (pariDispari === 'Pari')) || ((risultato === false) && (pariDispari === 'Dispari')))  {
+if (((risultato === true) && (pariDispari === 'pari')) || ((risultato === false) && (pariDispari === 'dispari')))  {
     alert('Hai vinto')
 } else {
     alert ('Hai perso')
